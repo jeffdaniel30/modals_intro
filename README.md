@@ -24,9 +24,9 @@ _Note: We are going to be hard coding the content of this modal, however, the te
 
 Starter code has been provided for you with all the files linked together.
 
-
-1. Open the `index.html`, `style.css` and `app.js` in VScode to follow along and create a modal.
-2. Open the `index.html` in your browser.
+1. Cd into the modal_practice folder.
+2. Open the `index.html`, `style.css` and `app.js` in VScode to follow along and create a modal.
+3. Open the `index.html` in your browser.
 
 ## Exercise
 
