@@ -5,8 +5,8 @@
 Title: Make a Modal <br>
 Type: Morning Exercise<br>
 Creator: Kristyn Bryan<br>
-Adapted by: Cathleen Wright, Jerrica Bobadilla<br>
-Competencies: CSS, HTML<br>
+Adapted by: Cathleen Wright, Jerrica Bobadilla, Carlos Godoy<br>
+Competencies: CSS, HTML, DOM Manipulation<br>
 
 <hr>
 
@@ -22,12 +22,11 @@ _Note: We are going to be hard coding the content of this modal, however, the te
 
 ## Setup
 
-Starter code has been provided for you with all the files linked together and the jQuery library.
+Starter code has been provided for you with all the files linked together.
 
-1. `git pull upstream master`
-2. Navigate to the `morning_exercise/modal_practice` folder for today. 
-3. Open the `index.html`, `style.css` and `app.js` in atom to follow along and create a modal.
-4. Open the `index.html` in your browser.
+
+1. Open the `index.html`, `style.css` and `app.js` in VScode to follow along and create a modal.
+2. Open the `index.html` in your browser.
 
 ## Exercise
 
@@ -188,20 +187,20 @@ _We will change this dynamically by adding a `display: block` in our event handl
 
 ```javascript
 // Grabbing About the Game button
-const $openBtn = $('#openModal');
+const openBtn = document.getElementById('openModal');
 
 // Grabbing modal element
-const $modal = $('#modal');
+const modal = document.getElementById('#modal')
 
 // Grabbing close button
-const $closeBtn = $('#close');
+const close = document.getElementById('#close')
 ```
 
 2. Set an event listener on the About the Game button.
 
 ```javascript
 //Add event listener to About the Game button
-$openBtn.on('click', openModal);
+openBtn.addEventListener('click', openModal)
 ```
 
 3. Create an event handler to display the modal. This needs to be placed _above_ the listener.
@@ -209,9 +208,9 @@ $openBtn.on('click', openModal);
 For the modal to display, we need to change the css property of the modal's `display` to `block`;
 
 ```javascript
-// Event handler to open the modal
+// Function to change modal display to 'block'
 const openModal = () => {
-  $modal.css('display', 'block');
+  modal.style.display = 'block';
 }
 ```
 
@@ -221,7 +220,7 @@ const openModal = () => {
 
 ```javascript
 //Add event listener to Close button
-$closeBtn.on('click', closeModal);
+close.addEventListener('click', closeModal)
 ```
 
 6. Create an event handler to close the modal.
@@ -231,39 +230,35 @@ For the modal to close, we need to change the css property of the modal's `displ
 ```javascript
 // Event handler to close the modal
 const closeModal = () => {
-  $modal.css('display', 'none');
+  modal.style.display = 'none'
 }
 ```
-
-:elephant: **Alternate Option:** look up the jQuery method [.hide()](http://api.jquery.com/hide/)
 
 
 We should now be able to open and close the modal with clicks to the associated buttons.
 
 ### :spades: JavaScript At This Point:
 ```javascript
-$( () => {
-
 //Grabbing Elements
-const $openBtn = $('#openModal');
-const $modal = $('#modal');
-const $closeBtn = $('#close');
+const openBtn = document.getElementById('openModal');
+const modal = document.getElementById('modal')
+const close = document.getElementById('close')
 
-//Event Handlers
+//Functions
 const openModal = () => {
-  $modal.css('display', 'block');
+  modal.style.display = 'block';
 }
 
 const closeModal = () => {
-  $modal.css('display', 'none');
+  modal.style.display = 'none'
 }
 
 //Event Listeners
-$openBtn.on('click', openModal);
+openBtn.addEventListener('click', openModal)
 
-$closeBtn.on('click', closeModal);
+close.addEventListener('click', closeModal)
 
-}); //
+
 ```
 
 ![working modal](https://media.giphy.com/media/l0Iy0bvX0tqIkH4qY/giphy.gif)
