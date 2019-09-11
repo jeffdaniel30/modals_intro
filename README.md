@@ -184,17 +184,17 @@ _We will change this dynamically by adding a `display: block` in our event handl
 
 ## Hide and Show your Modal
 
-1. In your `app.js` file, grab the three pieces we'll need: `About the Game` button, the modal, and the `close` button.  Write your code inside the jQuery window onload provided.
+1. In your `app.js` file, grab the three pieces we'll need: `About the Game` button, the modal, and the `close` button.
 
 ```javascript
 // Grabbing About the Game button
 const openBtn = document.getElementById('openModal');
 
 // Grabbing modal element
-const modal = document.getElementById('#modal')
+const modal = document.getElementById('modal')
 
 // Grabbing close button
-const close = document.getElementById('#close')
+const close = document.getElementById('close')
 ```
 
 2. Set an event listener on the About the Game button.
@@ -214,8 +214,6 @@ const openModal = () => {
   modal.style.display = 'block';
 }
 ```
-
-:elephant: **Alternate Option:** look up the jQuery method [.show()](http://api.jquery.com/show/)
 
 5. Set an event listener on the close button. 
 
