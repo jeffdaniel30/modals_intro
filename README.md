@@ -281,7 +281,8 @@ setTimeout(openModal, 5000);
 Reorganize the code in our Modal Text Box and format it to look a little nicer.
 
 1. Move the `Close` button to the bottom of the text box and wrap it in a `div` to make it easier to style.  Give the `<div>` an **id** of `modal-footer`.
-```
+
+```html
 <div id="modal-footer">
 <a id="close" href="#">Close</a>
 </div>
@@ -300,7 +301,7 @@ line-height: 120%;
 3. Adjust the close button location. Select just the footer and let's move the close button to the right:
   `text-align: right;`
 
-```
+```css
 #modal-footer {
 	text-align: right;
 }
@@ -322,11 +323,11 @@ We have two buttons on our page. One uses a `<button>` tag and the other is an `
 
 1. Adjust the close `<a>` to an `<button>` tag so that we can do the same styling to both, and give _both_ `<button>` tags a **class** of "modal-buttons".
 
-```
+```html
 <button class="modal-buttons" id="openModal">About the Game</button>
 ```
 
-```
+```html
 <div id="modal-footer">
 	<button class="modal-buttons" id="close" href="#">Close</button>
 </div>
@@ -334,7 +335,7 @@ We have two buttons on our page. One uses a `<button>` tag and the other is an `
 
 2. In the css file:
 
-```
+```css
 .modal-buttons {
 	padding: 14px 18px;
 	background-color: #677996;
