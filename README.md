@@ -359,7 +359,7 @@ We have two buttons on our page. One uses a `<button>` tag and the other is an `
 
 ## Hungry for More? 
 
-- Try generating the Modal and its content dynamically via DOM manipulation! 
+- Try generating the Modal and its content dynamically via DOM manipulation! (Check out the [branch](https://git.generalassemb.ly/seir-323/modals_intro/tree/js-dom-manipulation/modal_practice) if you need help getting started)
 
 
 # Additional Resources
