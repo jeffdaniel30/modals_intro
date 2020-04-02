@@ -43,26 +43,26 @@ Let's pretend that we are making the card game: Bridge. We want a modal to pop u
 
 1. Add a button that we will use to open the modal
 
-  ```javascript
+  ```html
   <button id="openModal">About the Game</button>
   ```
   - give it the text `About the Game`
 
 2. Add a div which will be the modal.  Give an an **id** of `modal` so we can refer to it later.
 
-  ```javascript
+  ```html
   <div id="modal"></div>
    ```
 
 3. Add the elements that will go **inside** the modal `<div>`:
   - An anchor tag to close the modal with the text `Close`.  Give it an **id** of `close` so we can reference it later.
-  ```javascript
+  ```html
   <a id="close" href="#">Close</a>
   ```
 
   - A header tag for the modal's header with the text `Learn to Play Bridge`:
   
-  ```javascript
+  ```html
   <h1>Learn to Play Bridge</h1>
   ```
 
