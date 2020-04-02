@@ -357,6 +357,10 @@ We have two buttons on our page. One uses a `<button>` tag and the other is an `
 
 ![button change final](https://i.imgur.com/4ft8Uda.png)
 
+## Hungry for More? 
+
+- Try generating the Modal and its content dynamically via DOM manipulation! 
+
 
 # Additional Resources
 
