@@ -50,14 +50,21 @@ Let's pretend that we are making the card game: Bridge. We want a modal to pop u
 
 2. Add a div which will be the modal.  Give an an **id** of `modal` so we can refer to it later.
 
-  `<div id="modal"></div>`
+  ```javascript
+  <div id="modal"></div>
+   ```
 
 3. Add the elements that will go **inside** the modal `<div>`:
   - An anchor tag to close the modal with the text `Close`.  Give it an **id** of `close` so we can reference it later.
-  `<a id="close" href="#">Close</a>`
+  ```javascript
+  <a id="close" href="#">Close</a>
+  ```
 
-  - A header tag for the modal's header with the text `Learn to Play Bridge`
-  `<h1>Learn to Play Bridge</h1>`
+  - A header tag for the modal's header with the text `Learn to Play Bridge`:
+  
+  ```javascript
+  <h1>Learn to Play Bridge</h1>
+  ```
 
   - Three paragraphs with text inside the box.  Feel free to use lorem ipsum text or, for more authentic text, take some from here: http://www.acbl.org/learn_page/how-to-play-bridge/
   
