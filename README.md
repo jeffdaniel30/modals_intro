@@ -25,7 +25,7 @@ _Note: We are going to be hard coding the content of this modal, however, the te
 Starter code has been provided for you with all the files linked together.
 
 1. Fork and clone this repo.
-2. Cd into the modal_practice folder.
+2. Cd into the modal_practice folder. No need to create a new dev branch as we won't be committing and pushing code, but you're welcome to! 
 3. Open the `index.html`, `style.css` and `app.js` in VScode to follow along and create a modal.
 4. Open the `index.html` in your browser.
 
